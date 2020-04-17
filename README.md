@@ -3,12 +3,17 @@
 A repository which has FE and BE integrations on respective folders. 
 
 # Front End
-Technology: Angular 
+Technology: Angular
+
 Directory: jobs-ui
 
 # Back End
 Technology: Nodejs
+
 Directory: jobs-api
+
+# Database
+SQLite
 
 # Steps to execute components
 1. Close repository from master branch
@@ -18,5 +23,7 @@ Directory: jobs-api
 5. To instantiate BE, navigate to folder `jobs-api`
 6. Run cmd `npm install` to install dependencies.
 7. Start server by running cmd `node index.js` or `npm start`. Server will be started and available on http://localhost:3000
+
+FYI, github jobs API for fetching and listing job details.
 
 for any clarification, write to guganssp@gmail.com
