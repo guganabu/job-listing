@@ -1,0 +1,32 @@
+<div class="search-panel">
+    <div class="search-input location-selector">
+        <div>Location</div>
+        <input [(ngModel)] ="location"/>
+    </div>
+    <div class="search-input title-search">
+        <div>Title</div>
+        <input [(ngModel)]="title" />
+    </div>
+    <div class="search-btn">
+        <button (click)="onSearchJob()">Fetch Jobs</button>
+    </div>
+
+</div>
+<ng-container *ngIf="isSearchStarted">
+    <div class="search-results-panel">
+        <ng-container *ngIf="jobList.length > 0; else noResult;">
+            <div class="job-list-container">
+                <div class="job-info" *ngFor="let job of jobList;">
+                    <div class="title">{{job.title}}</div>
+                    <div class="company"><span class="label">Company: </span> <span>{{job.company}}</span></div>
+                    <div class="location"><span class="label">Location:</span> {{job.location}}</div>
+                </div>
+            </div>
+        </ng-container>
+        <ng-template #noResult>
+            <div>
+                No result found
+            </div>
+        </ng-template>
+    </div>
+</ng-container>

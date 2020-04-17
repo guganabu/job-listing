@@ -1,0 +1,55 @@
+.search-panel {
+    display: grid;
+    // grid-template-columns: auto auto;
+    .search-input {
+        padding: 8px;
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: #444;
+        }
+        input {
+            border-radius: 12px;
+            width: 100%;
+            height: 35px;
+            outline: none;
+            border: 1px solid gray;
+            padding-left: 12px;
+            &:focus {
+                outline: none;;
+            }
+        }
+    }
+    .search-btn {
+        justify-self: right;
+        button {
+            height: 35px;
+            border-radius: 4px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #999999;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.search-results-panel {
+    max-height: 300px;
+    overflow-y: auto;
+    .job-list-container {
+        .job-info {
+            border-bottom: 1px solid gray;
+            margin-bottom: 5px;
+            .title {
+                font-weight: bold;
+                font-size: 17px;
+            }
+            .company, .location {
+                > span.label {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

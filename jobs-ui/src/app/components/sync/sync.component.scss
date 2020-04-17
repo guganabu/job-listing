@@ -1,0 +1,27 @@
+.import-btn {
+    width: max-content;
+    padding: 0 12px;
+    height: 35px;
+    text-transform: uppercase;
+    background-color: #009933;
+    color: #fff;
+    line-height: 35px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.importing {
+    color: #ff9900;
+    font-size: 14px;
+    
+}
+
+.imported {
+    color: #009933;
+    font-weight: 14px;
+    &-fail {
+        color: red;
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "/positions.json": {
+    "target": "https://jobs.github.com/positions.json",
+    "secure": false
+  }
+}

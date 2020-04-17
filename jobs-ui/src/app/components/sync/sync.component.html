@@ -1,0 +1,14 @@
+<div class="import-btn" (click)="importJobs()">
+    Import Jobs
+</div>
+
+<ng-container *ngIf="isImporting">
+    <div class="importing">Importing Jobs....</div>
+</ng-container>
+
+<ng-container *ngIf="totalImportedJobs">
+    <div *ngIf="!isFailed; else failed;" class="imported">Total Imported Jobs: {{totalImportedJobs}}</div>
+    <ng-template #failed>
+        <div class="imported-fail">Failed</div>
+    </ng-template>
+</ng-container>

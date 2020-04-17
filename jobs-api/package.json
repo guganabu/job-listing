@@ -1,0 +1,29 @@
+{
+  "name": "jobs-api",
+  "version": "1.0.0",
+  "description": "An API handler for github jobs api integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guganabu/job-listing.git"
+  },
+  "keywords": [
+    "gihub",
+    "jobs"
+  ],
+  "author": "Gugan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guganabu/job-listing/issues"
+  },
+  "homepage": "https://github.com/guganabu/job-listing#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "sqlite3": "^4.1.1"
+  }
+}
